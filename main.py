@@ -37,7 +37,7 @@ async def txt_processing(file):
                 if letters[i + 1] != " ":
                     letters[i] = f"{letters[i]} "
         else:
-            if up_letter:
+            if up_letter and letters[i] != " ":
                 letters[i] = letters[i].upper()
                 up_letter = False
             else:
